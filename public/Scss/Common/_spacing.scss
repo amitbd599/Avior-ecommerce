@@ -1,0 +1,46 @@
+/*
+* Spacing Declarations
+*/
+
+@for $i from 1 through 500 {
+  .py--#{1 * $i} {
+    padding-top: 1px * $i;
+    padding-bottom: 1px * $i;
+  }
+  .px--#{1 * $i} {
+    padding-left: 1px * $i;
+    padding-right: 1px * $i;
+  }
+  .pt--#{1 * $i} {
+    padding-top: 1px * $i;
+  }
+  .pb--#{1 * $i} {
+    padding-bottom: 1px * $i;
+  }
+  .pl--#{1 * $i} {
+    padding-left: 1px * $i;
+  }
+  .pr--#{1 * $i} {
+    padding-right: 1px * $i;
+  }
+  .my--#{1 * $i} {
+    margin-top: 1px * $i;
+    margin-bottom: 1px * $i;
+  }
+  .mx--#{1 * $i} {
+    margin-left: 1px * $i;
+    margin-right: 1px * $i;
+  }
+  .mt--#{1 * $i} {
+    margin-top: 1px * $i;
+  }
+  .mb--#{1 * $i} {
+    margin-bottom: 1px * $i;
+  }
+  .mr--#{1 * $i} {
+    margin-right: 1px * $i;
+  }
+  .ml--#{1 * $i} {
+    margin-left: 1px * $i;
+  }
+}

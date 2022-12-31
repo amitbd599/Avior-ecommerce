@@ -1,0 +1,30 @@
+/*
+* Variable Declarations
+*/
+
+:root {
+  // Color scheme
+  --primary_color: #eaa451;
+  --theme_color: #0d59ef;
+  --heading_color: #131045;
+  --heading_color_soft: #4d4a85;
+  --text_color: #737373;
+  --bg_color: #ffffff;
+  --border_color: #aaaaaa;
+
+  //Social icon colors
+  --facebook: #3b5997;
+  --twitter: #1ba1f2;
+  --youtube: #ed4141;
+  --linkedin: #0077b5;
+  --pinterest: #e60022;
+  --instagram: #c231a1;
+  --vimeo: #00adef;
+  --twitch: #6441a3;
+}
+// Media queries
+
+$xl-device: "only screen and (min-width: 1280px)";
+$lg-device: "only screen and (min-width: 1024px) and (max-width: 1279px)";
+$md-device: "only screen and (min-width: 768px) and (max-width: 1023px)";
+$sm-device: "only screen and (max-width: 767px)";

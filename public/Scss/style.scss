@@ -1,0 +1,41 @@
+/*********************************************************************************
+	Template Name: Next LMS - Professional LMS Online Education Course React Template
+	Note: This is style css.
+**********************************************************************************/
+
+/**************************************************************
+	STYLESHEET INDEXING
+	|
+	|___ Default Styles
+	|	|
+	|	|___ variable
+	|	|___ reset
+	|	|___ button
+	|	|___ animation
+	|	|___ loader
+	|
+	|___ Components Styles
+	|	|___ topHeader
+
+	|
+	|___ END STYLESHEET INDEXING
+***************************************************************/
+
+/**************************************
+    Default Styles
+***************************************/
+
+@import "Common/variable";
+@import "Common/reset";
+@import "Common/button";
+@import "Common/animation";
+@import "Common/loader";
+@import "Common/spacing";
+@import "Common/shortcode";
+
+/**************************************
+    Components Styles
+***************************************/
+
+@import "Components/header";
+@import "Components/heroSection";
