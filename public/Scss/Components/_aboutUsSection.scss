@@ -1,0 +1,103 @@
+#aboutUsSection {
+  padding: 100px 0;
+  .leftSide {
+    .wrapper {
+      .imgFile {
+        position: relative;
+        > img {
+          width: 560px;
+        }
+        .textFile {
+          background: #fff;
+          position: absolute;
+          top: 160px;
+          right: 30px;
+          padding: 20px 20px;
+          border-radius: 10px;
+          width: 350px;
+          h2 {
+            font-size: 20px;
+            font-weight: 700;
+          }
+          h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #ff6c40;
+            font-weight: 600;
+          }
+          .progressBar {
+            margin-top: 10px;
+            .progress {
+              height: 12px;
+              .progress-bar {
+                background: #ff3a29 !important;
+              }
+            }
+          }
+          .avatar {
+            margin-top: 20px;
+            display: flex;
+            span {
+              display: block;
+              border-radius: 50%;
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .rightSide {
+    display: flex;
+    align-items: center;
+    .wrapper {
+      .textFile {
+        h1 {
+          font-size: 18px;
+          font-weight: 600;
+          color: #0d59ef;
+        }
+        h2 {
+          margin-top: 12px;
+          font-size: 40px;
+          font-weight: 700;
+        }
+        p {
+          margin-top: 10px;
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+      ul li {
+        padding: 2px 0;
+        font-weight: 600;
+        span {
+          background: #01d2a1;
+          color: #fff;
+          padding: 5px;
+          border-radius: 50%;
+          font-size: 12px;
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+  .option__data {
+    margin-top: 120px;
+    text-align: center;
+    .imgFile {
+    }
+    .textFile {
+      margin-top: 25px;
+      h2 {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      p {
+        margin-top: 5px;
+        font-size: 15px;
+        font-weight: 400;
+      }
+    }
+  }
+}

@@ -2,6 +2,8 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Slider from "react-slick";
 import { FaStar } from "react-icons/fa";
+import SliderProducts from "../../Data/SliderProducts";
+
 const HeroSection = () => {
   var settings = {
     dots: true,
@@ -11,7 +13,6 @@ const HeroSection = () => {
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 5000,
-    // cssEase: "linear",
   };
   return (
     <section id='hero__section'>
@@ -90,32 +91,30 @@ const HeroSection = () => {
               <div className='slider__body shadow-md'>
                 <div className='wrapper'>
                   <Slider {...settings}>
-                    {[...Array(3)].map((item, index) => (
-                      <div className='slider__bodyInner d-flex'>
+                    {SliderProducts.map((item, index) => (
+                      <div key={index} className='slider__bodyInner d-flex'>
                         <div className='d-flex'>
                           <div className='imgFile'>
-                            <img
-                              className='img-fluid'
-                              src='/Images/products/product_1.png'
-                              alt=''
-                            />
+                            <img className='img-fluid' src={item.img} alt='' />
                           </div>
                           <div className='textFile pl--20 d-flex align-items-center'>
                             <div>
                               <div className='title__box'>
-                                <h2>Denim Jeans</h2>
-                                <p>Best Seller</p>
+                                <h2>{item.name}</h2>
+                                <p>{item.subTitle}</p>
                               </div>
                               <div className='d-flex mt--10 align-items-center'>
                                 <div className='price'>
-                                  <span>$9.5</span>
+                                  <span>${item.price}</span>
                                 </div>
-                                <div className='review ml--8'>
-                                  {[...Array(5)].map((item, index) => (
-                                    <span key={index} className='mr--3'>
-                                      <FaStar />
-                                    </span>
-                                  ))}
+                                <div className='review ml--10'>
+                                  {[...Array(item.review)].map(
+                                    (item, reviewIndex) => (
+                                      <span key={reviewIndex} className='mr--3'>
+                                        <FaStar />
+                                      </span>
+                                    )
+                                  )}
                                 </div>
                               </div>
                             </div>
@@ -130,11 +129,6 @@ const HeroSection = () => {
           </Col>
         </Row>
       </Container>
-      {/* <div className='shapeImage position-absolute'>
-        <div className='shape_1'>
-          <img src='/Images/shape/shape_4.png' alt='' />
-        </div>
-      </div> */}
     </section>
   );
 };

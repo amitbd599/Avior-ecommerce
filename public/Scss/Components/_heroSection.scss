@@ -12,7 +12,6 @@
   overflow: hidden;
   .leftSide {
     z-index: 99;
-    padding-bottom: 50px;
     .wrapper {
       .topHeaderText {
         h1 {
@@ -84,6 +83,7 @@
     }
   }
   .rightSide {
+    margin-top: 25px;
     display: flex;
     justify-content: end;
     z-index: 99;
