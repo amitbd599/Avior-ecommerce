@@ -40,23 +40,42 @@ const FeaturedProduct = () => {
               <div className='wrapper'>
                 <div className='slider__body'>
                   <Slider {...settings}>
-                    <div>
-                      <h3>1</h3>
-                    </div>
-                    <div>
-                      <h3>2</h3>
-                    </div>
-                    <div>
-                      <h3>3</h3>
-                    </div>
-                    <div>
-                      <h3>4</h3>
-                    </div>
-                    <div>
-                      <h3>5</h3>
-                    </div>
-                    <div>
-                      <h3>6</h3>
+                    <div className='slider__item'>
+                      <div>
+                        <div className='imgFile'>
+                          <img
+                            src='/Images/featureProducts/product_1.png'
+                            alt=''
+                          />
+                        </div>
+                        <div className='textFile'>
+                          <div>
+                            <div>
+                              <h1>BEST SELLER</h1>
+                              <h2>Denim Jeans Pro</h2>
+                              <p>Denim</p>
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris
+                              </p>
+                            </div>
+                            <div>
+                              <div>
+                                <span>$9.5</span>
+                              </div>
+                              <div>
+                                <span>$6.5</span>
+                              </div>
+                              <div>
+                                <span>20% OFF</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </Slider>
                 </div>
