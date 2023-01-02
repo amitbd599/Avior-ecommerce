@@ -1,0 +1,58 @@
+const FeatureProductSliderData = [
+  {
+    title: "Denim Jeans Pro",
+    brand: "Denim",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ",
+    price: "9.5",
+    bar: "12.5",
+    discount: "30%",
+    img: "/Images/featureProducts/product_1.png",
+  },
+  {
+    title: "New Fashionable Denim",
+    brand: "Levi's",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ",
+    price: "19.5",
+    bar: "15.5",
+    discount: "20%",
+    img: "/Images/featureProducts/product_2.png",
+  },
+  {
+    title: "Semi Narrow Classic",
+    brand: "Madewell",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ",
+    price: "8.5",
+    bar: "13.5",
+    discount: "40%",
+    img: "/Images/featureProducts/product_3.png",
+  },
+  {
+    title: "Ladies Skinny Denim",
+    brand: "Everlane",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ",
+    price: "29.5",
+    bar: "22.5",
+    discount: "5%",
+    img: "/Images/featureProducts/product_4.png",
+  },
+  {
+    title: "Stylish Men's Blue",
+    brand: "Reformation",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ",
+    price: "8.5",
+    bar: "15.5",
+    discount: "40%",
+    img: "/Images/featureProducts/product_5.png",
+  },
+  {
+    title: "Export Quality Denim",
+    brand: "Agolde",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ",
+    price: "10.5",
+    bar: "16.5",
+    discount: "30%",
+    img: "/Images/featureProducts/product_6.png",
+  },
+];
+
+export default FeatureProductSliderData;

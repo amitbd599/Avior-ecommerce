@@ -1,9 +1,11 @@
 import Header from "../Components/Common/Header";
 import SEO from "../Components/Common/SEO";
-import AboutUsSection from "../Components/Layout/AboutUsSection";
-import ExploreProducts from "../Components/Layout/ExploreProducts";
-import FeaturedProduct from "../Components/Layout/featuredProduct";
-import HeroSection from "../Components/Layout/HeroSection";
+import AboutUsSection from "../Components/ChildComponents/AboutUsSection";
+import ExploreProducts from "../Components/ChildComponents/ExploreProducts";
+import FeaturedProduct from "../Components/ChildComponents/FeaturedProduct";
+import HeroSection from "../Components/ChildComponents/HeroSection";
+import Accessories from "../Components/ChildComponents/Accessories";
+import TestimonialSection from "../Components/ChildComponents/TestimonialSection";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <AboutUsSection />
       <ExploreProducts />
       <FeaturedProduct />
+      <Accessories />
+      <TestimonialSection />
     </>
   );
 }

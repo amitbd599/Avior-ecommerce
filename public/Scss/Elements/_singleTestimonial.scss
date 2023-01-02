@@ -1,0 +1,26 @@
+.singleTestimonial {
+  .wrapper {
+    .imgFile {
+      width: 65px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+    .textFile {
+      margin-left: 20px;
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--heading_color);
+      }
+      p {
+        font-size: 15px;
+        font-weight: normal;
+      }
+    }
+    .des p {
+      margin-top: 18px;
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+}

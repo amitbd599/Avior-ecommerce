@@ -34,6 +34,13 @@
 @import "Common/shortcode";
 
 /**************************************
+    Elements Styles
+***************************************/
+
+@import "Elements/singleProductCard";
+@import "Elements/singleTestimonial";
+
+/**************************************
     Components Styles
 ***************************************/
 
@@ -42,3 +49,5 @@
 @import "Components/aboutUsSection";
 @import "Components/exploreProducts";
 @import "Components/featuredProduct";
+@import "Components/accessories";
+@import "Components/testimonialSection";
