@@ -6,6 +6,8 @@ import FeaturedProduct from "../Components/ChildComponents/FeaturedProduct";
 import HeroSection from "../Components/ChildComponents/HeroSection";
 import Accessories from "../Components/ChildComponents/Accessories";
 import TestimonialSection from "../Components/ChildComponents/TestimonialSection";
+import GetNotification from "../Components/Common/GetNotification";
+import Footer from "../Components/Common/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <FeaturedProduct />
       <Accessories />
       <TestimonialSection />
+      <GetNotification />
+      <Footer />
     </>
   );
 }
