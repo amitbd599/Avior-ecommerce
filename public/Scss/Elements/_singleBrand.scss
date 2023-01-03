@@ -1,0 +1,49 @@
+.singleBrand {
+  .wrapper {
+    border-radius: 10px;
+    &.green {
+      background: #db2777;
+    }
+    &.purple {
+      background: #9333ea;
+    }
+    &.orange {
+      background: #ea580c;
+    }
+    .inner__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 20px;
+      h2 {
+        font-size: 26px;
+        font-weight: 700;
+        color: #fff;
+      }
+      h4 {
+        margin-top: 5px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+      }
+      p {
+        font-size: 14px;
+        color: #fff;
+      }
+      a {
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        padding: 4px 20px;
+        border-radius: 7px;
+        font-weight: 600;
+        margin-top: 8px;
+        color: #333;
+        background: #fff;
+      }
+      img {
+        width: 120px;
+      }
+    }
+  }
+}
