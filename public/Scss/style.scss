@@ -32,6 +32,7 @@
 @import "Common/loader";
 @import "Common/spacing";
 @import "Common/shortcode";
+@import "Common/react-accessible-accordion";
 
 /**************************************
     Elements Styles
@@ -54,6 +55,8 @@
 @import "Components/accessories";
 @import "Components/testimonialSection";
 @import "Components/getNotification";
-@import "Components/introSection";
 @import "Components/historySection";
 @import "Components/productBrand";
+@import "Components/aboutIntroSection";
+@import "Components/introSection";
+@import "Components/shopSection";

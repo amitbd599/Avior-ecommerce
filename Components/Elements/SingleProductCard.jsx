@@ -22,9 +22,12 @@ const SingleProductCard = ({ item }) => {
             </span>
             <span className='mt--5 ml--6'>{`5.0 (${item.review} Reviews)`}</span>
           </div>
-          <div className='mt--12 mb--8'>
+          <div className='mt--12 mb--8 d-flex justify-content-around'>
             <Link href={"/"}>
               <button className='cartBtn'>Add To Cart</button>
+            </Link>
+            <Link href={"/"}>
+              <button className='cartBtn'>Add To Wishlist</button>
             </Link>
           </div>
         </div>
