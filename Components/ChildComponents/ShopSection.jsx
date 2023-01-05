@@ -19,8 +19,8 @@ const ShopSection = () => {
     { value: "Sort by latest", label: "Sort by latest" },
     { value: "Popularity", label: "Popularity" },
     { value: "Sort by rating", label: "Sort by rating" },
-    { value: "Low to high", label: "Price low to high" },
-    { value: "High to low", label: "Price high to low" },
+    { value: "Low to high", label: "Low to high" },
+    { value: "High to low", label: "High to low" },
   ];
 
   const NewestProducts = AllProducts.filter((data) => data.filter === "Newest");

@@ -1,6 +1,33 @@
 /*
 * ‍Short code
-*/ 
+*/
+// ====== Color Shape ====== //
+
+.primary_text_color {
+  color: var(--primary_color);
+}
+.primary_bg_color {
+  color: var(--primary_color);
+}
+.theme_text_color {
+  color: var(--theme_color);
+}
+.theme_bg_color {
+  color: var(--theme_color);
+}
+.heading_text_color {
+  color: var(--heading_color);
+}
+.heading_bg_color {
+  color: var(--heading_color);
+}
+.text_text_color {
+  color: var(--text_color);
+}
+.text_bg_color {
+  color: var(--text_color);
+}
+
 // ====== Border Radius ====== //
 
 .rounded-sm {

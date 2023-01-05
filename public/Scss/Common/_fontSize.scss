@@ -1,0 +1,9 @@
+/*
+* Spacing Declarations
+*/
+
+@for $i from 1 through 200 {
+  .fz--#{1 * $i} {
+    font-size: 1px * $i;
+  }
+}
