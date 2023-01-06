@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import ImageGallery from "react-image-gallery";
 import Select from "react-select";
 import {
+  FaCartPlus,
   FaCommentDots,
   FaFacebookF,
   FaHeart,
@@ -15,13 +16,16 @@ import {
   FaTruck,
   FaTwitter,
 } from "react-icons/fa";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 const SingleProductSection = () => {
   const [item, setItem] = useState(1);
   const increaseValue = () => {
     setItem(item + 1);
   };
   const decreaseValue = () => {
-    setItem(item - 1);
+    if (item >= 1) {
+      setItem(item - 1);
+    }
   };
   const images = [
     {
@@ -308,7 +312,9 @@ const SingleProductSection = () => {
                     </div>
                     {/* Add To Cart BTN */}
                     <div className='addToCartBtn'>
-                      <button>Add To Cart</button>
+                      <button>
+                        <FaCartPlus className='mr--3 mb--5' /> Add To Cart
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -316,6 +322,80 @@ const SingleProductSection = () => {
             </div>
           </Col>
         </Row>
+
+        {/* Product Description */}
+        <div className='product__Description'>
+          <Row>
+            <Col>
+              <div className='wrapper'>
+                <div className='inner__body'>
+                  <Tabs>
+                    <TabList>
+                      <Tab>Description</Tab>
+                      <Tab>Reviews (200)</Tab>
+                      <Tab>Discussion</Tab>
+                      <Tab>Gift Cards</Tab>
+                    </TabList>
+
+                    {/* Description Body Section */}
+                    <TabPanel>
+                      <Row>
+                        <Col>
+                          <div className='description__section'>
+                            <div className='wrapper__inner'>
+                              <ul>
+                                <li className='d-flex align-items-center '>
+                                  <span>Name:</span>
+                                  <span>Men’s Premium Jeans</span>
+                                </li>
+                                <li className='d-flex align-items-center '>
+                                  <span>Brand:</span>
+                                  <span>AVIOR Clothing Ltd.</span>
+                                </li>
+                                <li className='d-flex align-items-center '>
+                                  <span>Product Code:</span>
+                                  <span>DF$215230LKMJJUH</span>
+                                </li>
+                                <li className='d-flex align-items-center '>
+                                  <span>Date:</span>
+                                  <span>27th January 2022</span>
+                                </li>
+                                <li className='d-flex align-items-center '>
+                                  <span>Materials:</span>
+                                  <span>Jeans</span>
+                                </li>
+                                <li className='d-flex align-items-center color__variation__btn'>
+                                  <span>Color Variations:</span>
+                                  <div className='variation__btn'>
+                                    <span>Blue</span>
+                                    <span>Purple</span>
+                                    <span>Gray</span>
+                                  </div>
+                                </li>
+                                <li className='d-flex align-items-center size__variation__btn'>
+                                  <span>Size Variations:</span>
+                                  <div className='variation__btn'>
+                                    <span>XL</span>
+                                    <span>L</span>
+                                    <span>M</span>
+                                    <span>S</span>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </Col>
+                      </Row>
+                    </TabPanel>
+                    <TabPanel>
+                      <h2>Any content 2</h2>
+                    </TabPanel>
+                  </Tabs>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </div>
       </Container>
     </section>
   );
