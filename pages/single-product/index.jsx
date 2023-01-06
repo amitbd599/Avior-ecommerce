@@ -1,4 +1,5 @@
 import React from "react";
+import RelatedProduct from "../../Components/ChildComponents/RelatedProduct";
 import SingleProductSection from "../../Components/ChildComponents/SingleProductSection";
 import Footer from "../../Components/Common/Footer";
 import GetNotification from "../../Components/Common/GetNotification";
@@ -13,6 +14,7 @@ const index = () => {
       <Header />
       <IntroSection pageName={"Single Product"} />
       <SingleProductSection />
+      <RelatedProduct />
       <GetNotification />
       <Footer />
     </>

@@ -1,6 +1,6 @@
 #singleProductSection {
   .leftSide {
-    margin-top: 50px;
+    margin-top: 70px;
     .wrapper {
       .slider__body {
         padding: 0 40px;
@@ -35,7 +35,7 @@
     }
   }
   .rightSide {
-    margin-top: 50px;
+    margin-top: 70px;
     .wrapper {
       .inner__section {
         .header__text {
@@ -336,6 +336,80 @@
                       border-radius: 5px;
                       margin-right: 15px;
                     }
+                  }
+                }
+                .tags__variation__btn {
+                  .variation__btn {
+                    span {
+                      background: #f1f5f9;
+                      padding: 7px 12px;
+                      font-size: 14px;
+                      color: var(--theme_color);
+                      border-radius: 5px;
+                      margin-right: 15px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          // Reviews Body Section
+          .reviews__section {
+            margin-top: 40px;
+            .wrapper__inner {
+              margin-bottom: 35px;
+              .top__bar {
+                display: flex;
+                align-items: flex-start;
+                .imgFile {
+                  overflow: hidden;
+                  border-radius: 50%;
+                  img {
+                    width: 65px;
+                  }
+                }
+                .textFile {
+                  margin-left: 18px;
+                  .userName {
+                    h3 {
+                      font-size: 22px;
+                      font-weight: 700;
+                    }
+                  }
+                  .review {
+                    display: flex;
+                    align-items: center;
+                    .review__text {
+                      span {
+                        font-size: 18px;
+                        font-weight: 600;
+                      }
+                    }
+                    .reviewIcon {
+                      span {
+                        display: inline-block;
+                        margin-right: 2px;
+                        font-size: 16px;
+                        color: #ff754c;
+                      }
+                    }
+                    .time {
+                      span {
+                        display: inline-block;
+                        margin-right: 3px;
+                        font-size: 18px;
+                        font-weight: 600;
+                      }
+                    }
+                  }
+                }
+              }
+              .bottom__bar {
+                margin-top: 20px;
+                .review__des {
+                  p {
+                    font-size: 16px;
+                    font-weight: normal;
                   }
                 }
               }

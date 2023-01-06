@@ -17,6 +17,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import FeaturedProduct from "./FeaturedProduct";
 const SingleProductSection = () => {
   const [item, setItem] = useState(1);
   const increaseValue = () => {
@@ -85,7 +86,7 @@ const SingleProductSection = () => {
             <div className='wrapper'>
               <div className='inner__section'>
                 <div className='header__text'>
-                  <h2>Jeans : Men’s Premium</h2>
+                  <h2>Jeans : Women's Premium</h2>
                 </div>
                 <div className='review__inner'>
                   <div className='review'>
@@ -346,7 +347,7 @@ const SingleProductSection = () => {
                               <ul>
                                 <li className='d-flex align-items-center '>
                                   <span>Name:</span>
-                                  <span>Men’s Premium Jeans</span>
+                                  <span>Women's Premium Jeans</span>
                                 </li>
                                 <li className='d-flex align-items-center '>
                                   <span>Brand:</span>
@@ -381,14 +382,202 @@ const SingleProductSection = () => {
                                     <span>S</span>
                                   </div>
                                 </li>
+                                <li className='d-flex align-items-center tags__variation__btn'>
+                                  <span>Tags:</span>
+                                  <div className='variation__btn'>
+                                    <span>Jeans In Bangladesh</span>
+                                    <span>Clothing Brand in Bangladesh</span>
+                                    <span>Jeans Pant</span>
+                                    <span>Best Ecommerce</span>
+                                    <span>Best Brand</span>
+                                    <span>Jeans 2023</span>
+                                  </div>
+                                </li>
                               </ul>
                             </div>
                           </div>
                         </Col>
                       </Row>
                     </TabPanel>
+                    {/* Reviews Body Section */}
                     <TabPanel>
-                      <h2>Any content 2</h2>
+                      <Row>
+                        <Col lg={8}>
+                          <div className='reviews__section'>
+                            <div className='wrapper__inner'>
+                              <div className='top__bar'>
+                                <div className='imgFile'>
+                                  <img
+                                    className='img-fluid'
+                                    src='/Images/Profile/profile_4.png'
+                                    alt=''
+                                  />
+                                </div>
+                                <div className='textFile'>
+                                  <div className='userName'>
+                                    <h3>Maria Lopa</h3>
+                                  </div>
+                                  <div className='review'>
+                                    <div className='review__text mt--4 pr--10'>
+                                      <span>5.0</span>
+                                    </div>
+                                    <div className='reviewIcon'>
+                                      <span>
+                                        <FaStar />
+                                      </span>
+                                      <span>
+                                        <FaStar />
+                                      </span>
+                                      <span>
+                                        <FaStar />
+                                      </span>
+                                      <span>
+                                        <FaStar />
+                                      </span>
+                                      <span>
+                                        <FaStar />
+                                      </span>
+                                    </div>
+                                    <div className='time  pl--10'>
+                                      <span className='mt--5'>1 Month Ago</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className='bottom__bar'>
+                                <div className='review__des'>
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Amet a habitant tortor nec.
+                                    Rhoncus nullam sit lacus, mi. Tincidunt
+                                    ornare sed venenatis quam odio sit. Sed enim
+                                    enim cras nibh elit. Leo a habitant aliquam
+                                    a, amet, enim mauris eget pretium. Proin
+                                    tellus diam, egestas orci. Id at vitae nunc,
+                                    fermentum aliquam ultrices massa, pretium.
+                                    Sit nulla aliquet nulla felis sed natoque
+                                    congue. Eget nunc et ultrices enim sed ac
+                                    volutpat. Diam convallis iaculis id leo
+                                    vitae purus. Morbi tempor a ac imperdiet
+                                    morbi. Eros, purus diam enim blandit elit
+                                    enim arcu at proin. Amet quam et.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div className='wrapper__inner'>
+                              <div className='top__bar'>
+                                <div className='imgFile'>
+                                  <img
+                                    className='img-fluid'
+                                    src='/Images/Profile/profile_5.png'
+                                    alt=''
+                                  />
+                                </div>
+                                <div className='textFile'>
+                                  <div className='userName'>
+                                    <h3>John Alex</h3>
+                                  </div>
+                                  <div className='review'>
+                                    <div className='review__text mt--4 pr--10'>
+                                      <span>5.0</span>
+                                    </div>
+                                    <div className='reviewIcon'>
+                                      <span>
+                                        <FaStar />
+                                      </span>
+                                      <span>
+                                        <FaStar />
+                                      </span>
+                                      <span>
+                                        <FaStar />
+                                      </span>
+                                      <span>
+                                        <FaStar />
+                                      </span>
+                                      <span>
+                                        <FaStar />
+                                      </span>
+                                    </div>
+                                    <div className='time  pl--10'>
+                                      <span className='mt--5'>1 Month Ago</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className='bottom__bar'>
+                                <div className='review__des'>
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Amet a habitant tortor nec.
+                                    Rhoncus nullam sit lacus, mi. Tincidunt
+                                    ornare sed venenatis quam odio sit. Sed enim
+                                    enim cras nibh elit. Leo a habitant aliquam
+                                    a, amet, enim mauris eget pretium. Proin
+                                    tellus diam, egestas orci.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div className='wrapper__inner'>
+                              <div className='top__bar'>
+                                <div className='imgFile'>
+                                  <img
+                                    className='img-fluid'
+                                    src='/Images/Profile/profile_6.png'
+                                    alt=''
+                                  />
+                                </div>
+                                <div className='textFile'>
+                                  <div className='userName'>
+                                    <h3>Piter Hoker</h3>
+                                  </div>
+                                  <div className='review'>
+                                    <div className='review__text mt--4 pr--10'>
+                                      <span>5.0</span>
+                                    </div>
+                                    <div className='reviewIcon'>
+                                      <span>
+                                        <FaStar />
+                                      </span>
+                                      <span>
+                                        <FaStar />
+                                      </span>
+                                      <span>
+                                        <FaStar />
+                                      </span>
+                                      <span>
+                                        <FaStar />
+                                      </span>
+                                      <span>
+                                        <FaStar />
+                                      </span>
+                                    </div>
+                                    <div className='time  pl--10'>
+                                      <span className='mt--5'>1 Month Ago</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className='bottom__bar'>
+                                <div className='review__des'>
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Amet a habitant tortor nec.
+                                    Rhoncus nullam sit lacus, mi. Tincidunt
+                                    ornare sed venenatis quam odio sit. Sed enim
+                                    enim cras nibh elit. Leo a habitant aliquam
+                                    a, amet, enim mauris eget pretium. Proin
+                                    tellus diam, egestas orci. Id at vitae nunc,
+                                    fermentum aliquam ultrices massa.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </Col>
+                        <Col lg={4}></Col>
+                      </Row>
                     </TabPanel>
                   </Tabs>
                 </div>
