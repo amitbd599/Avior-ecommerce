@@ -100,7 +100,10 @@ img {
   outline: none;
 }
 span {
-  line-height: initial;
+  line-height: normal;
+}
+label {
+  line-height: normal;
 }
 
 .container-xl,
