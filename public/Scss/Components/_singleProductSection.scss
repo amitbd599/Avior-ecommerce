@@ -252,6 +252,7 @@
     }
   }
   .product__Description {
+    position: relative;
     margin-top: 50px;
     .wrapper {
       .inner__body {
@@ -268,6 +269,7 @@
               padding: 6px 5px;
               margin: 0 16px;
               margin-bottom: 10px;
+              user-select: none;
             }
             .react-tabs__tab--selected {
               color: var(--heading_color);
@@ -412,6 +414,19 @@
                     font-weight: normal;
                   }
                 }
+              }
+            }
+          }
+          // Shipping and Returns Body Section
+          .shipping__returns__section {
+            .wrapper__inner {
+              h2 {
+                font-size: 22px;
+                font-weight: 700;
+              }
+              p {
+                font-size: 15px;
+                font-weight: normal;
               }
             }
           }
