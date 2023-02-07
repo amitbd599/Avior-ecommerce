@@ -369,7 +369,7 @@ const Header = () => {
                     </div>
                     <div className='inner__cart'>
                       <div className='text__file'>
-                        <p>Original brand gift ladies</p>
+                        <p>Original Jints Pents for man</p>
                         <div className='price'>
                           <span>1 x 250</span>
                         </div>
@@ -385,29 +385,13 @@ const Header = () => {
                     </div>
                     <div className='inner__cart'>
                       <div className='text__file'>
-                        <p>Original brand gift ladies</p>
+                        <p>Bag pack gift Dika pents</p>
                         <div className='price'>
                           <span>1 x 250</span>
                         </div>
                       </div>
                       <div className='img__file'>
                         <img src='/Images/allProduct/product_4.png' alt='' />
-                      </div>
-                      <div className='close__icon'>
-                        <span>
-                          <GrClose />
-                        </span>
-                      </div>
-                    </div>
-                    <div className='inner__cart'>
-                      <div className='text__file'>
-                        <p>Original brand gift ladies</p>
-                        <div className='price'>
-                          <span>1 x 250</span>
-                        </div>
-                      </div>
-                      <div className='img__file'>
-                        <img src='/Images/allProduct/product_5.png' alt='' />
                       </div>
                       <div className='close__icon'>
                         <span>
