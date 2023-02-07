@@ -1,21 +1,31 @@
 import Link from "next/link";
+import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { BsFillCartPlusFill, BsHeartFill, BsSearch } from "react-icons/bs";
+import { useRouter } from "next/router";
 import {
   FaBellSlash,
   FaChevronDown,
   FaEnvelopeOpenText,
   FaExclamationTriangle,
+  FaLongArrowAltRight,
   FaQuestion,
   FaSignOutAlt,
   FaUserFriends,
   FaUserTie,
 } from "react-icons/fa";
+import { GrClose } from "react-icons/gr";
 const Header = () => {
+  const router = useRouter();
+  const [active, setActive] = useState(false);
+  const controlCartSideBar = () => {
+    setActive(!active);
+  };
   return (
     <>
       <header>
         <div id='header__area'>
+          {/* Header Top Section */}
           <Container>
             <Row>
               <Col lg={2}>
@@ -31,7 +41,7 @@ const Header = () => {
                   </div>
                 </div>
               </Col>
-              <Col lg={6}>
+              <Col lg={5}>
                 <div className='category__section rounded'>
                   <div className='w-100'>
                     <div className='w-100 wrapper'>
@@ -123,16 +133,96 @@ const Header = () => {
                   </div>
                 </div>
               </Col>
-              <Col lg={4}>
+              <Col lg={5}>
                 <div className='user__section'>
                   <div className='d-flex justify-content-end'>
-                    <div className='cart__hart__icon d-flex align-items-center pr--5 position-relative'>
-                      <span className='hartIcon'>
-                        <BsHeartFill />
-                      </span>
-                      <span className='hartIconItems'>5</span>
+                    <div className='all__page d-flex align-items-center pr--5 position-relative'>
+                      <div className='dropdown__menu'>
+                        <div className='category__box'>
+                          <div className='cursor-pointer'>
+                            <span>All Pages</span>
+                            <span className='pl--5'>
+                              <FaChevronDown />
+                            </span>
+                          </div>
+                          <div className='nav drop-shadow-md'>
+                            <nav className='w-100'>
+                              <ul>
+                                <li
+                                  className={
+                                    router.pathname == "/" ? "active" : ""
+                                  }
+                                >
+                                  <Link href={"/"}>Home</Link>
+                                </li>
+                                <li
+                                  className={
+                                    router.pathname == "/about" ? "active" : ""
+                                  }
+                                >
+                                  <Link href={"/about"}>About US</Link>
+                                </li>
+                                <li
+                                  className={
+                                    router.pathname == "/cart" ? "active" : ""
+                                  }
+                                >
+                                  <Link href={"/cart"}>Cart</Link>
+                                </li>
+                                <li
+                                  className={
+                                    router.pathname == "/checkout"
+                                      ? "active"
+                                      : ""
+                                  }
+                                >
+                                  <Link href={"/checkout"}>Checkout</Link>
+                                </li>
+                                <li
+                                  className={
+                                    router.pathname == "/shop" ? "active" : ""
+                                  }
+                                >
+                                  <Link href={"/shop"}>Shop</Link>
+                                </li>
+                                <li
+                                  className={
+                                    router.pathname == "/single-product"
+                                      ? "active"
+                                      : ""
+                                  }
+                                >
+                                  <Link href={"/single-product"}>
+                                    Single Product
+                                  </Link>
+                                </li>
+                                <li
+                                  className={
+                                    router.pathname == "/contact"
+                                      ? "active"
+                                      : ""
+                                  }
+                                >
+                                  <Link href={"/contact"}>Contact</Link>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div className='cart__hart__icon d-flex align-items-center pr--20 position-relative'>
+                    <div className='cart__hart__icon d-flex align-items-center pr--5 position-relative'>
+                      <Link href={"/cart"}>
+                        <span className='hartIcon'>
+                          <BsHeartFill />
+                        </span>
+                        <span className='hartIconItems'>5</span>
+                      </Link>
+                    </div>
+                    <div
+                      className='cart__hart__icon d-flex align-items-center pr--20 position-relative'
+                      onClick={controlCartSideBar}
+                    >
                       <span className='cartIcon'>
                         <BsFillCartPlusFill />
                       </span>
@@ -244,6 +334,110 @@ const Header = () => {
                 </div>
               </Col>
             </Row>
+            {/* Overlay Section */}
+
+            <div className={active ? "overlay__cart active" : "overlay__cart"}>
+              <div className='wrapper'>
+                <div className='inner__wrapper'>
+                  <div className='header__intro'>
+                    <div>
+                      <h2>SHOPPING CART</h2>
+                    </div>
+                    <div onClick={controlCartSideBar}>
+                      <span className='close__icon'>
+                        Close <FaLongArrowAltRight />
+                      </span>
+                    </div>
+                  </div>
+                  {/* Cart Items */}
+                  <div className='inner__cart__items'>
+                    <div className='inner__cart'>
+                      <div className='text__file'>
+                        <p>Original brand gift ladies</p>
+                        <div className='price'>
+                          <span>1 x 250</span>
+                        </div>
+                      </div>
+                      <div className='img__file'>
+                        <img src='/Images/allProduct/product_2.png' alt='' />
+                      </div>
+                      <div className='close__icon'>
+                        <span>
+                          <GrClose />
+                        </span>
+                      </div>
+                    </div>
+                    <div className='inner__cart'>
+                      <div className='text__file'>
+                        <p>Original brand gift ladies</p>
+                        <div className='price'>
+                          <span>1 x 250</span>
+                        </div>
+                      </div>
+                      <div className='img__file'>
+                        <img src='/Images/allProduct/product_3.png' alt='' />
+                      </div>
+                      <div className='close__icon'>
+                        <span>
+                          <GrClose />
+                        </span>
+                      </div>
+                    </div>
+                    <div className='inner__cart'>
+                      <div className='text__file'>
+                        <p>Original brand gift ladies</p>
+                        <div className='price'>
+                          <span>1 x 250</span>
+                        </div>
+                      </div>
+                      <div className='img__file'>
+                        <img src='/Images/allProduct/product_4.png' alt='' />
+                      </div>
+                      <div className='close__icon'>
+                        <span>
+                          <GrClose />
+                        </span>
+                      </div>
+                    </div>
+                    <div className='inner__cart'>
+                      <div className='text__file'>
+                        <p>Original brand gift ladies</p>
+                        <div className='price'>
+                          <span>1 x 250</span>
+                        </div>
+                      </div>
+                      <div className='img__file'>
+                        <img src='/Images/allProduct/product_5.png' alt='' />
+                      </div>
+                      <div className='close__icon'>
+                        <span>
+                          <GrClose />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Sub Total */}
+                  <div className='sub__total'>
+                    <div className='inner__item'>
+                      <hr />
+                      <div className='intro__header'>
+                        <h2>Subtotal:</h2>
+                        <h2>$ 2500.00</h2>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Cart Button */}
+                  <div className='cart__button'>
+                    <div>
+                      <button className='btn-big-full-bg'>VIEW CART</button>
+                    </div>
+                    <div>
+                      <button className='btn-big-full-outline'>CHECKOUT</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </Container>
         </div>
       </header>
